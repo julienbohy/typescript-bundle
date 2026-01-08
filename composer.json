@@ -4,12 +4,16 @@
     "license": "MIT",
     "description": "Acme bundle description",
     "minimum-stability": "stable",
+    "keywords": ["symfony", "typescript"],
     "require": {
         "php": ">=8.2",
         "symfony/framework-bundle": "^6.4|^7.4|^8.0"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -22,6 +26,19 @@
         }
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.65"
+        "ekino/phpstan-banned-code": "^3.0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpunit/phpunit": "^12.5",
+        "rector/jack": "^0.5.1",
+        "rector/rector": "^2.3",
+        "rector/swiss-knife": "^2.3",
+        "rector/type-perfect": "^2.1",
+        "symplify/easy-coding-standard": "^13.0",
+        "tomasvotruba/class-leak": "^2.1",
+        "tomasvotruba/type-coverage": "^2.1",
+        "tomasvotruba/unused-public": "^2.2"
     }
 }

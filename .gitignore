@@ -1,2 +1,21 @@
+###> IDE / OS ###
+.idea/
+.cursor/
+.vscode/
+**/[Dd]S_Store*
+**/.[Dd]S_Store*
+.run
+###< IDE / OS ###
+
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
 /vendor/
 composer.lock
