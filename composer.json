@@ -5,8 +5,14 @@
     "description": "Acme bundle description",
     "minimum-stability": "stable",
     "keywords": ["symfony", "typescript"],
+    "scripts": {
+        "check-cs": "vendor/bin/ecs check --ansi",
+        "fix-cs": "vendor/bin/ecs check --fix --ansi",
+        "test":  "vendor/bin/phpunit ./tests"
+    },
     "require": {
         "php": ">=8.2",
+        "symfony/console": "^7.4",
         "symfony/framework-bundle": "^6.4|^7.4|^8.0"
     },
     "config": {
