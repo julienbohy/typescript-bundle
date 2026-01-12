@@ -10,8 +10,12 @@ return static function (ContainerConfigurator $container): void {
         ->parameters()
             // ->set('julienbohy_typescript.param_name', 'param_value');
     ;
-    $container
-        ->services()
-            // ->set('julienbohy_typescript.service_name', 'service_class')
+    $services = $container->services()
+        ->defaults()
+            ->autowire()
+            ->autoconfigure()
     ;
+
+    $services->load('JulienBohy\\TypescriptBundle\\', '../src/')
+        ->exclude('../src/{DependencyInjection,Entity,Tests,TypescriptBundle.php}');
 };
