@@ -12,7 +12,7 @@ class GenerateCommand
 {
 
     public function __invoke(
-        #[Argument(name: 'path', description: 'Path to the directory containing the classes')]
+        #[Argument(description: 'Path to the directory containing the classes', name: 'path')]
         $path
     )
     {
