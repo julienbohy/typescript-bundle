@@ -13,7 +13,8 @@
     "require": {
         "php": ">=8.2",
         "symfony/console": "^6.4|^7.4|^8.0",
-        "symfony/framework-bundle": "^6.4|^7.4|^8.0"
+        "symfony/framework-bundle": "^6.4|^7.4|^8.0",
+        "symfony/string": "^7.4"
     },
     "config": {
         "sort-packages": true,
